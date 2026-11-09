@@ -12,7 +12,7 @@
         <a class="navbar-brand" href="{{ route('dashboard') }}">Data Mahasiswa</a>
         <ul class="navbar-nav ms-auto flex-row flex-wrap align-items-center gap-3">
             @auth
-                <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Dashboards</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Tampilan</a></li>
                 @if(auth()->user()->isAdmin())
                     <li class="nav-item"><a class="nav-link" href="{{ route('mahasiswa.index') }}">Mahasiswa</a></li>
                 @endif
